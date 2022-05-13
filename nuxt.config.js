@@ -1,7 +1,6 @@
 const bodyParser = require("body-parser");
 
 export default {
-  target: "static",
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -38,10 +37,7 @@ export default {
   modules: ["@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    command: "npm run build  && npm run export",
-    publish: "out",
-  },
+  build: {},
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
     baseURL: "http://localhost:3000/api",
