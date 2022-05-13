@@ -37,7 +37,10 @@ export default {
   modules: ["@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    command: "npm run build  && npm run export",
+    publish: "out",
+  },
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
     baseURL: "http://localhost:3000/api",
