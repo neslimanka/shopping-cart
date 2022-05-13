@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 
 export default {
+  target: "static",
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
 
   // Global page headers: https://go.nuxtjs.dev/config-head
